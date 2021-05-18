@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <script src="main.js" type="module" defer></script>
+  <title>ToDo list app</title>
+</head>
+<body>
+  <h1 class="main-header">ToDo list</h1>
+
+  <div class="new-item__container">
+    <input id="input-new-item" class="new-item__input" placeholder="Add Item" type="text" autofocus>
+    <button id="btn-new-item" class="new-item__btn">+</button>
+  </div>
+
+  <div id="div-filter">
+
+      <input id="input-filter-all" class="filter__input" type="radio" name="filter" value="all" required checked>
+      <label class="filter__label" for="input-filter-all">all</label>
+
+      <input id="input-filter-uncompleted" class="filter__input" type="radio" name="filter" value="uncompleted" required>
+      <label class="filter__label" for="input-filter-uncompleted">uncompleted</label>
+
+      <input id="input-filter-completed" class="filter__input" type="radio" name="filter" value="completed" required>
+      <label class="filter__label" for="input-filter-completed">completed</label>
+
+  </div>
+
+  <div id="div-list-items" class="list-items__container">
+
+  </div>
+</body>
+
+</html>
